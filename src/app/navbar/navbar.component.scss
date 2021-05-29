@@ -1,0 +1,51 @@
+.nav-bgimage{
+    background: url(/assets/h1.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 95vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 52% 12% 12% 12% 12%;
+    padding: 22px;
+    background-color:#000;
+    opacity: 0.8;   
+}
+.logo{
+    font-size: 30px;
+    color:#fff;
+    letter-spacing: 3px;
+}
+.nav-links{
+    padding-top: 6px;
+}
+.nav-a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.nav-a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+  }
+.nav-a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+
+
+
+
+
+
