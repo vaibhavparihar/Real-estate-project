@@ -1,6 +1,590 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lora', serif;
+@import "variable.scss"; /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body,
+div,
+ul,
+li,
+nav,
+p {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fbfbfb;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.hoverable {
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height-vh {
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-vertical {
+  flex-direction: column;
+}
+
+.flex-horizontal {
+  flex-direction: row;
+}
+
+.flex-hr-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.icon-button {
+  color: #777;
+  :hover {
+    color: #222;
+  }
+}
+
+.icon-button-disabled {
+  color: #777;
+  cursor: none;
+}
+
+.auth-ctr {
+  min-width: 400px;
+
+  .auth-form {
+    max-width: 400px;
+    margin-top: 20px;
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      height: 140px;
+    }
+
+    .auth-form-row {
+      height: 60px;
+
+      mat-error {
+        font-size: 11px;
+      }
+    }
+
+    .auth-form-footer {
+      height: 40px;
+    }
+  }
+}
+
+/* space at the bottom of left navigation  */
+.mat-drawer-inner-container {
+  height: calc(100% - 10px) !important;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.invisible-editor {
+  &.mat-form-field {
+    margin-top: 4px;
+  }
+
+  .mat-form-field-underline {
+    display: none !important;
+  }
+
+  &.mat-focused,
+  &.ng-invalid {
+    .mat-form-field-underline {
+      display: block !important;
+    }
+  }
+
+  .mat-form-field-underline {
+    bottom: 0;
+  }
+
+  .mat-form-field-infix {
+    border-top: 0;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+
+  .mat-form-field {
+    margin-top: 0 !important;
+  }
+}
+
+.mat-slide-toggle-bar {
+  transform: scale(0.8);
+}
+
+.global-task-list-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+
+  app-task-list {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .sort-ctr {
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+}
+
+.global-task-list-row {
+  .mat-form-field-underline {
+    bottom: 0;
+  }
+
+  .mat-form-field-infix {
+    border-top: 0;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+
+  .mat-form-field {
+    margin-top: 0 !important;
+  }
+}
+
+.left-nav-ctr > div,
+.custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #fafafa;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #d0d0d0;
+    border-radius: 3px;
+  }
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.disable-row {
+  pointer-events: none;
+}
+
+mat-icon[svgIcon] {
+  &.pi-svg-edit-icon {
+    height: 20px;
+  }
+}
+
+.progress-bg-spinner {
+  circle {
+    stroke: #ccc;
+  }
+}
+
+.full-page-loader-dialog {
+  .mat-dialog-container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: $color-heading;
+}
+
+.color-rose {
+  color: $color-heading;
+}
+
+// app refresh bar
+.refresher-pulling-icon > ion-icon,
+.refresher-refreshing-icon > ion-spinner {
+  color: $color-medium;
+}
+
+.refresher-refreshing-text,
+.refresher-pulling-text {
+  font-size: 12px;
+  color: $color-medium !important;
+}
+
+@media only screen and (min-width: 1280px) {
+  .card-responsive {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  color: $color-medium;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 18px;
+  color: $color-medium;
+}
+
+h6 {
+  font-size: 20px;
+  color: $color-medium;
+}
+
+.simple-input {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 2px solid $color-medium;
+  border-right: 0;
+  padding: 3px;
+  outline: none;
+  &.error {
+    border-bottom: 2px solid #f93d5c;
+  }
+}
+
+.input-item {
+  &.error {
+    border-bottom: 2px solid #f93d5c;
+  }
+}
+
+ion-button {
+  &.error {
+    border: 2px solid #f93d5c;
+  }
+}
+
+/**** popover width *****/
+
+.task-priority-popover {
+  .popover-content {
+    width: 270px;
+  }
+}
+
+.task-status-popover {
+  .popover-content {
+    width: 220px;
+  }
+}
+
+.qarter-selection-popover {
+  .popover-content {
+    width: 240px;
+  }
+}
+
+.date-picker-popover {
+  .popover-content {
+    width: 330px;
+    height: 350px;
+  }
+}
+
+/***** typography *****/
+
+.detail-popup-description {
+  font-size: 20px;
+  min-height: 50px;
+  padding: 7px 5px 5px 5px !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  width: 547px !important;
+}
+
+.detail-popup-resource {
+  font-size: 18px;
+  min-height: 65px;
+  padding: 8px 5px 4px 5px !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  width: 547px !important;
+}
+
+.editable-txt {
+  line-height: 20px;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  > ion-spinner {
+    height: 14px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.col-dark {
+  color: $color-dark;
+}
+
+.col-light {
+  color: $color-light;
+}
+
+.col-medium {
+  color: $color-medium;
+}
+
+.p-t-5 {
+  padding-top: 5px;
+}
+
+.p-l-5 {
+  padding-left: 5px;
+}
+
+.p-r-5 {
+  padding-right: 5px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-15 {
+  padding-top: 15px;
+}
+
+.p-l-15 {
+  padding-left: 15px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-t-25 {
+  padding-top: 25px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-24 {
+  font-size: 24px;
+}
+
+.f-36 {
+  font-size: 36px;
+}
+
+.f-72 {
+  font-size: 72px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-22 {
+  line-height: 22px;
+}
+
+.lh-25 {
+  line-height: 25px;
+}
+
+/*** clickable *****/
+.clickable {
+  cursor: pointer;
+}
+
+/**** date picker ***/
+
+app-picker-popup {
+  .flatpickr-calendar {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.flatpickr-month {
+  select {
+    -moz-appearance: none !important; /* Firefox */
+    -webkit-appearance: none !important;
+    appearance: none !important;
+  }
+}
+
+/**** special display *******/
+.text-small-bold {
+  font-size: 12px;
+  font-weight: bold;
+  color: #777;
+
+  &.clickable:hover {
+    color: #3d8fc8;
+  }
+}
+
+/**** Buttons *****/
+.btn-inline {
+  display: inline-block;
+  padding: 4px 4px 2px 4px;
+  border-radius: 5px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+
+  .btn-inline-text {
+    font-size: 18px;
+    right: 0px;
+  }
+
+  &.btn-small {
+    padding: 2px 5px;
+  }
+}
+
+.btn-inline:hover {
+  background-color: #eee;
+}
+
+.login-server-url-pop-up {
+  .alert-wrapper {
+    width: 360px;
+    max-width: 360px;
+  }
+}
+.update-okr-popover {
+  .popover-content {
+    width: 300px;
+  }
+}
+
+.okr-add-objective {
+  color: #abadad !important;
+}
+
+.color-success {
+  color: green;
+}
+
+.mat-h4 {
+  color: $color-rose;
 }
