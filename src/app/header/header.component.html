@@ -1,7 +1,13 @@
-<mat-toolbar color="primary">
-  <span>Logo</span>
+<div class="header flex">
+  <div class="site-logo flex-center-all">
+    <span class="site-logo">Krishna Kartik Homes LLP</span>
+  </div>
   <div class="flex-1"></div>
-  <button mat-button routerLink="/home">Home</button>
-  <button mat-button routerLink="/about">About</button>
-  <button mat-button routerLink="/contactUs">Contact Us</button>
-</mat-toolbar>
+  <div class="flex-center-all">
+    <button mat-button routerLink="/home">Home</button>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/contactUs">Our Services</button>
+    <span class="button-space"></span>
+    <button mat-raised-button routerLink="/contactUs">Contact Us</button>
+  </div>
+</div>
