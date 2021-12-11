@@ -25,10 +25,15 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatRadioModule } from '@angular/material/radio';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { OurVersionComponent } from './components/our-version/our-version.component';
+import { HomeSectionItemsComponent } from './components/home-section-items/home-section-items.component';
 // import { TooltipModule } from './tooltip-pro/tooltip.module';
 
 @NgModule({
-  declarations: [OurServicesComponent, OurVersionComponent],
+  declarations: [
+    OurServicesComponent,
+    OurVersionComponent,
+    HomeSectionItemsComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule,
@@ -83,6 +88,7 @@ import { OurVersionComponent } from './components/our-version/our-version.compon
     MatMenuModule,
     MatButtonToggleModule,
     MatRadioModule,
+    HomeSectionItemsComponent,
   ],
 })
 export class SharedModule {}
