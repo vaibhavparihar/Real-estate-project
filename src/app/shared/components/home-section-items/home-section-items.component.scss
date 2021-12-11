@@ -1,0 +1,22 @@
+//<--------- About-us  ---------->
+
+.about-us {
+  background: rgb(230, 230, 230);
+
+  .about-us-title {
+    height: 40px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .about-us-sub-title {
+    margin: 10px 15px 10px 15px;
+  }
+}
+
+.section-info {
+  margin: 15px;
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgb(0 0 0 / 87%);
+  border-radius: 5px;
+}
