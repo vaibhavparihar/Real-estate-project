@@ -3,16 +3,18 @@
   min-width: 400px;
 
   > .image-slider {
-    height: 500px;
+    height: 60vh;
     background: url("/assets/main-header-image.jpg") no-repeat center / cover;
   }
 }
-
+.content-holder {
+  margin: -50px 25px 0px 25px;
+}
 .image-slider-quote {
   padding: 10px;
   color: white;
   background-color: #24232398;
-  margin: 25px 0px 125px 25px;
+  margin: 50px 0px 150px 25px;
   border-radius: 5px;
 
   > .quote {
