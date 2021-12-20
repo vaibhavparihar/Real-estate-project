@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeItemsComponent } from './home/home-items/home-items.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
