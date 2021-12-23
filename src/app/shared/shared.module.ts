@@ -89,6 +89,7 @@ import { HomeSectionItemsComponent } from './components/home-section-items/home-
     MatButtonToggleModule,
     MatRadioModule,
     HomeSectionItemsComponent,
+    OurServicesComponent,
   ],
 })
 export class SharedModule {}
