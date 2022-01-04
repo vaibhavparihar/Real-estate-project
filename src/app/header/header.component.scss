@@ -14,6 +14,20 @@
     font-weight: 400;
   }
 }
+.fixed{
+  position: fixed;
+  width:97.2%;
+  transition: 0.1s linear;
+  z-index: 1000;
+}
+.example-spacer{
+}
+.notfixed{
+  position: static;
+  transition: 0.1s linear;
+  top: -50px;
+  z-index: 1000;
+}
 
 .mat-button {
   font-size: 16px;
