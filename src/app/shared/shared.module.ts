@@ -26,6 +26,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { OurVersionComponent } from './components/our-version/our-version.component';
 import { HomeSectionItemsComponent } from './components/home-section-items/home-section-items.component';
+import { ContactUsSectionComponent } from './components/contact-us-section/contact-us-section.component';
 // import { TooltipModule } from './tooltip-pro/tooltip.module';
 
 @NgModule({
@@ -33,6 +34,7 @@ import { HomeSectionItemsComponent } from './components/home-section-items/home-
     OurServicesComponent,
     OurVersionComponent,
     HomeSectionItemsComponent,
+    ContactUsSectionComponent,
   ],
   imports: [
     CommonModule,
@@ -90,6 +92,7 @@ import { HomeSectionItemsComponent } from './components/home-section-items/home-
     MatRadioModule,
     HomeSectionItemsComponent,
     OurServicesComponent,
+    ContactUsSectionComponent,
   ],
 })
 export class SharedModule {}
