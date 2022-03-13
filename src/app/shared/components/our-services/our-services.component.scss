@@ -2,11 +2,8 @@
   color: #000;
   overflow: hidden;
 }
-section{
+section {
   background-color: white;
-  // background-position: top;
-  // background-size: cover;
-  // background-attachment: fixed;
 }
 .services-heading {
   text-align: center;
@@ -15,38 +12,5 @@ section{
   font-size: 35px;
   letter-spacing: 2px;
 }
-.container{
-  display: flex;
-  justify-content: space-evenly;
+.container {
 }
-.item-card{
-  background-color: rgb(50,50,50);
-  width: 350px;
-  height: 450px;
-  // border-radius: 5px;
-  box-shadow: 10px 10px 5px 0px rgb(151, 151, 151);
-  margin: 20px 0px;
-}
-.item-card:hover{
-  transform: translate(0px ,-8px);
-  transition: 0.3s ease-in;
-}
-.img-div-1{
-  background: url("/assets/img-5.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-}
-.img-div-2{
-  background: url("/assets/img-2.jpeg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-}
-.img-div-3{
-  background: url("/assets/img-3.jpeg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-}
-
