@@ -10,7 +10,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { HomeComponent } from './home/home.component';
 import { HomeItemsComponent } from './home/home-items/home-items.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
+    NgImageSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

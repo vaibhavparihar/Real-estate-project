@@ -26,6 +26,9 @@ import { MatRadioModule } from '@angular/material/radio';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { OurVersionComponent } from './components/our-version/our-version.component';
 import { HomeSectionItemsComponent } from './components/home-section-items/home-section-items.component';
+import { PrevDirective } from './prev.directive';
+import { NextDirective } from './next.directive';
+import { NgImageSliderModule } from 'ng-image-slider';
 // import { TooltipModule } from './tooltip-pro/tooltip.module';
 
 @NgModule({
@@ -33,6 +36,8 @@ import { HomeSectionItemsComponent } from './components/home-section-items/home-
     OurServicesComponent,
     OurVersionComponent,
     HomeSectionItemsComponent,
+    PrevDirective,
+    NextDirective,
   ],
   imports: [
     CommonModule,
@@ -60,6 +65,7 @@ import { HomeSectionItemsComponent } from './components/home-section-items/home-
     MatMenuModule,
     MatButtonToggleModule,
     MatRadioModule,
+    NgImageSliderModule,
     // TooltipModule,
   ],
   exports: [
@@ -90,6 +96,9 @@ import { HomeSectionItemsComponent } from './components/home-section-items/home-
     MatRadioModule,
     HomeSectionItemsComponent,
     OurServicesComponent,
+    PrevDirective,
+    NextDirective,
+    NgImageSliderModule,
   ],
 })
 export class SharedModule {}
