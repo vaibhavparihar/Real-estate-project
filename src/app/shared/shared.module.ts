@@ -26,6 +26,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { OurVersionComponent } from './components/our-version/our-version.component';
 import { HomeSectionItemsComponent } from './components/home-section-items/home-section-items.component';
+import { ContactUsSectionComponent } from './components/contact-us-section/contact-us-section.component';
 import { PrevDirective } from './prev.directive';
 import { NextDirective } from './next.directive';
 import { NgImageSliderModule } from 'ng-image-slider';
@@ -36,6 +37,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     OurServicesComponent,
     OurVersionComponent,
     HomeSectionItemsComponent,
+    ContactUsSectionComponent,
     PrevDirective,
     NextDirective,
   ],
@@ -96,6 +98,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatRadioModule,
     HomeSectionItemsComponent,
     OurServicesComponent,
+    ContactUsSectionComponent,
     PrevDirective,
     NextDirective,
     NgImageSliderModule,
