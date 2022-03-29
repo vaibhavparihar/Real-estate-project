@@ -1,21 +1,39 @@
 <div class="container flex">
-    <div class="box-1 flex-1">
-        <h1 class="head-text">Get in Touch</h1>
-        <h1 class="content-text"><mat-icon><span class="material-icons-outlined">place</span></mat-icon>
-            Find us at the office
-        </h1>
+  <div class="box-1 flex-1">
+    <h1 class="head-text">Get in Touch</h1>
+    <div class="flex">
+      <div class="icon content-text">
+        <mat-icon
+          ><span class="material-icons-outlined office-icon"
+            >place</span
+          ></mat-icon
+        >
+      </div>
+      <div class="location flex-1">
+        <h1 class="content-text">Find us at the office</h1>
         <span class="content-text-2">
-            64p , Sector - 91 , Faridabad , Haryana 
+          64p , Sector - 91 , Faridabad , Haryana
         </span>
-        <h1 class="content-text"><mat-icon><span class="material-icons-outlined">smartphone</span></mat-icon>
-            Give us a ring
-        </h1>
-        <span class="content-text-2">
-            9312263196 , 9811238641
-        </span>
+      </div>
     </div>
-    <div class="box-2 flex-1">
-        <h1 class="head-text-2">Connect with us</h1>
-        <div class="div-btn"><button class="btn">Contact us</button></div>
+    <div class="contact-number flex">
+      <div class="icon content-text">
+        <mat-icon
+          ><span class="material-icons-outlined phone-icon"
+            >smartphone</span
+          ></mat-icon
+        >
+      </div>
+      <div class="contact-info flex-1">
+        <h1 class="content-text">Give us a ring</h1>
+        <span class="content-text-2"> 9312263196 , 9811238641 </span>
+      </div>
     </div>
+  </div>
+  <div class="box-2 flex-1">
+    <h1 class="head-text-2">Connect with us</h1>
+    <div class="div-btn">
+      <button class="btn" routerLink="/contactUs">Contact us</button>
+    </div>
+  </div>
 </div>
